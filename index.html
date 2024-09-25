@@ -4,32 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teachable Machine AI Projects</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navbar">
         <div class="logo-section">
-          <a href="#home"
-            ><img src="images/mac.png" alt="mac" class="logo"
-          /></a>
-          <a href="#home"
-            ><img
+          <a href="#home">
+            <img src="images/mac.png" alt="mac" class="logo" />
+          </a>
+          <a href="#home">
+            <img
               src="images/Dst-inspire-faculty-fellowship.jpg"
               alt="inspire"
               class="logo"
-          /></a>
+            />
+          </a>
         </div>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#project1">Project 1</a></li>
           <li><a href="#project2">Project 2</a></li>
-          <li><a href="#resources">Resources</a></li>
+          <li>
+            <a href="resource.html" class="resources-btn button">Resources</a>
+          </li>
         </ul>
+        <div class="mobile-menu-icon" id="menu-icon">&#9776;</div>
       </nav>
     </header>
 
     <main>
+      <!-- Home Section -->
       <section id="home" class="full-screen">
         <div class="home-left">
           <h2>Welcome to Teachable Machine AI Projects</h2>
@@ -56,37 +61,6 @@
               enthusiasts and experts.
             </li>
           </ul>
-          <h3>What is AI and ML?</h3>
-          <p>
-            <strong>Artificial Intelligence (AI)</strong> refers to the
-            simulation of human intelligence in machines programmed to think and
-            learn. <strong>Machine Learning (ML)</strong> is a subset of AI that
-            allows systems to learn from data and improve their performance over
-            time without explicit programming.
-          </p>
-          <h3>Our Projects</h3>
-          <p>
-            Our projects are designed to help you understand the fundamentals of
-            AI and ML through hands-on experience:
-          </p>
-          <ul>
-            <li>
-              <strong>Image Classification:</strong> Create your own models to
-              classify images using Teachable Machine.
-            </li>
-            <li>
-              <strong>Smart Image Gallery:</strong> Build an interactive gallery
-              controlled by hand gestures.
-            </li>
-            <li>
-              <strong>Gesture Recognition:</strong> Train models to recognize
-              gestures and trigger actions in your applications.
-            </li>
-          </ul>
-          <p>
-            Follow our guided steps in each project to unleash your creativity
-            and build AI-powered applications!
-          </p>
         </div>
         <div class="home-right">
           <img src="images/ai.jpg" alt="Teachable Machine" />
@@ -137,10 +111,10 @@
             journey into the world of AI!
           </p>
           <a
-            class="btn-download"
+            class="btn-download button"
             href="https://github.com/alwinsibym/inspire-project"
             download
-            >Download Sample Dataset</a
+            >Download Dataset</a
           >
         </div>
       </section>
@@ -176,12 +150,9 @@
             Get started by downloading the code files or view the live site to
             see the gallery in action!
           </p>
-          <div class="button-group">
-            <a class="btn-download" href="code/smart-image-gallery.zip" download
-              >Download Code Files</a
-            >
+          <a class="btn-download button" href="https://github.com/alwinsibym/inspire-ai-smart-image-gallery" download>Download Code</a>
             <a
-              class="btn-view-live"
+              class="btn-view-live button"
               href="https://alwinsibym.github.io/inspire-ai-smart-image-gallery/"
               target="_blank"
               >View Live Site</a
@@ -191,37 +162,6 @@
         <div class="home-right">
           <img src="video/sg.gif" alt="Smart Image Gallery GIF" />
         </div>
-      </section>
-
-      <!-- Resources Section -->
-      <section id="resources">
-        <h2>Additional Resources</h2>
-        <ul>
-          <li>
-            <a href="https://teachablemachine.withgoogle.com/" target="_blank"
-              >Teachable Machine - Official Website</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/googlecreativelab/teachable-machine"
-              target="_blank"
-              >Teachable Machine - GitHub Repository</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web"
-              target="_blank"
-              >MDN Web Docs - HTML, CSS, and JavaScript</a
-            >
-          </li>
-          <li>
-            <a href="https://tensorflow.org/js" target="_blank"
-              >TensorFlow.js Documentation</a
-            >
-          </li>
-        </ul>
       </section>
     </main>
 
@@ -234,6 +174,6 @@
       </p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="index1.js"></script>
   </body>
 </html>
