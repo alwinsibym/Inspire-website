@@ -236,3 +236,29 @@
     }
   }
   
+.video-responsive {
+    width: 100%; /* Make the video responsive */
+    max-width: 780px; /* Set a max-width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Flexbox to align items */
+  .full-screen {
+    display: flex; /* Use flexbox to align items side by side */
+    flex-direction: row; /* Default direction for larger screens */
+    justify-content: space-between; /* Space between the left and right content */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .full-screen {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+    
+    .home-right {
+      order: 1; /* Position the video below the content */
+      margin-top: 20px; /* Add some space above the video */
+      text-align: center; /* Center the video for small screens */
+    }
+  }
+  
