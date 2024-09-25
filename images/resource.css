@@ -1,0 +1,152 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/robo.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Change navbar background to white */
+    padding: 10px;
+}
+
+.navbar-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #000051; /* Dark blue link color */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Code Editor Style */
+.code-editor {
+    position: relative;
+    background-color: #272822;
+    color: #f8f8f2;
+    border-radius: 8px;
+    overflow: auto;
+    max-height: 300px; /* Limit the height of code blocks */
+    white-space: pre-wrap;
+    margin: 20px 0;
+    border: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fake title bar (editor style) */
+.code-editor::before {
+    content: "Code Editor";
+    display: block;
+    padding: 8px 10px;
+    background-color: #444;
+    color: #f8f8f2;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #333;
+}
+
+/* Code Block Style */
+.code-editor pre {
+    padding: 15px;
+    margin: 0;
+}
+
+/* Copy Button */
+.copy-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px 10px;
+    background-color: #ff5101; /* Uniform button color */
+    color: #272822;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.copy-btn:hover {
+    background-color: #ff7600; /* Button hover color */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .mobile-menu-icon {
+      display: block;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+    }
+
+    .navbar {
+      justify-content: space-between;
+    }
+
+    main {
+      padding: 10px;
+    }
+
+    .code-editor {
+      max-height: 200px;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-icon {
+      display: none;
+    }
+}

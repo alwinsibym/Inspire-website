@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources: Web Development Project Source Codes</title>
+    <link rel="stylesheet" href="resource.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="index1.html"
+          ><img src="images/Dst-inspire-faculty-fellowship.jpg" alt="Logo 1"
+        /></a>
+        <a href="index1.html"><img src="images/mac.png" alt="Logo 2" /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#html-section">HTML</a></li>
+        <li><a href="#css-section">CSS</a></li>
+        <li><a href="#js-section">JavaScript</a></li>
+      </ul>
+      <div class="mobile-menu-icon" id="menu-icon">&#9776;</div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      <section id="html-section">
+        <h2>HTML Code</h2>
+
+        <!-- Code Editor Box for HTML -->
+        <div class="code-editor">
+          <button class="copy-btn" onclick="copyToClipboard('htmlCode')">
+            Copy html
+          </button>
+          <pre id="htmlCode">
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot; /&gt;
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+              &lt;title&gt;Travel Destinations Slider&lt;/title&gt;
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;div class=&quot;container&quot;&gt;
+                &lt;!-- Left Section --&gt;
+                &lt;div class=&quot;left-section&quot;&gt;
+                  &lt;div class=&quot;top-div&quot;&gt;
+                    &lt;h1&gt;AI Automated Gallery&lt;/h1&gt;
+                  &lt;/div&gt;
+          
+                  &lt;div class=&quot;center-div&quot;&gt;
+                    &lt;h2&gt;Instructions&lt;/h2&gt;
+          
+                    &lt;p class=&quot;instructions-text&quot;&gt;
+                      &lt;span&gt;Step 1&lt;/span&gt; Train your model using Teachable Machine&lt;br /&gt;
+                      &lt;span&gt;Step 2&lt;/span&gt; Download and open code files in Visual Studio Code&lt;br /&gt;
+                      &lt;span&gt;Step 3&lt;/span&gt; Open Code file and paste your Image Model URL there.&lt;br /&gt;
+                      &lt;span&gt;Step 4&lt;/span&gt; Run the code.&lt;br /&gt;
+                      &lt;span&gt;Step 5&lt;/span&gt; Use hand gestures to navigate images&lt;br /&gt;
+                      &lt;span&gt;Step 6&lt;/span&gt; Ensure good lighting for accurate gesture detection&lt;br /&gt;
+                      &lt;span&gt;Step 7&lt;/span&gt; Experience the difference between manual and automated navigation.&lt;br /&gt;
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;bottom-div&quot;&gt;
+                    &lt;a href=&quot;https://github.com/alwinsibym/inspire-ai-smart-image-gallery&quot;&gt;Download Resources&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+          
+                &lt;!-- Right Section --&gt;
+                &lt;div class=&quot;right-section&quot;&gt;
+                  &lt;div id=&quot;gesture-text&quot;&gt;
+                    Gesture Detected &lt;span id=&quot;gesture&quot;&gt;Null&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;image-gallery&quot;&gt;
+                    &lt;div class=&quot;slide&quot;&gt;
+                      &lt;div class=&quot;item&quot;
+                        style=&quot;background-image: url(&#x27;https://i.ibb.co/L53yMQr/germany.jpg&#x27;);&quot;&gt;
+                        &lt;div class=&quot;content&quot;&gt;
+                          &lt;div class=&quot;name&quot;&gt;Germany&lt;/div&gt;
+                          &lt;div class=&quot;des&quot;&gt;
+                            The land where castles meet culture and history meets beauty.
+                          &lt;/div&gt;
+                          &lt;button&gt;See More&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+          
+                      &lt;div class=&quot;item&quot;
+                        style=&quot;background-image: url(&#x27;https://i.ibb.co/L9CXKs3/paris.jpg&#x27;);&quot;&gt;
+                        &lt;div class=&quot;content&quot;&gt;
+                          &lt;div class=&quot;name&quot;&gt;Paris&lt;/div&gt;
+                          &lt;div class=&quot;des&quot;&gt;The city of lights and love.&lt;/div&gt;
+                          &lt;button&gt;See More&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+          
+                      &lt;div class=&quot;item&quot;
+                        style=&quot;background-image: url(&#x27;https://i.ibb.co/6Y0wcZn/ireland.jpg&#x27;);&quot;&gt;
+                        &lt;div class=&quot;content&quot;&gt;
+                          &lt;div class=&quot;name&quot;&gt;Ireland&lt;/div&gt;
+                          &lt;div class=&quot;des&quot;&gt;
+                            &quot;A land of rolling green hills, ancient myths, and warm welcomes.&quot;
+                          &lt;/div&gt;
+                          &lt;button&gt;See More&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+          
+                      &lt;div class=&quot;item&quot;
+                        style=&quot;background-image: url(&#x27;https://i.ibb.co/f8HBpmg/japan.jpg&#x27;);&quot;&gt;
+                        &lt;div class=&quot;content&quot;&gt;
+                          &lt;div class=&quot;name&quot;&gt;Japan&lt;/div&gt;
+                          &lt;div class=&quot;des&quot;&gt;
+                            Where tradition meets innovation amidst stunning landscapes and vibrant cities.
+                          &lt;/div&gt;
+                          &lt;button&gt;See More&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+          
+                      &lt;div class=&quot;item&quot;
+                        style=&quot;background-image: url(&#x27;https://i.ibb.co/smWJ1Yz/switzerland.jpg&#x27;);&quot;&gt;
+                        &lt;div class=&quot;content&quot;&gt;
+                          &lt;div class=&quot;name&quot;&gt;Switzerland&lt;/div&gt;
+                          &lt;div class=&quot;des&quot;&gt;
+                            A paradise of alpine beauty, serene lakes, and timeless charm.
+                          &lt;/div&gt;
+                          &lt;button&gt;See More&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;button&quot;&gt;
+                      &lt;button class=&quot;prev&quot;&gt;Prev&lt;/button&gt;
+                      &lt;button class=&quot;next&quot;&gt;Next&lt;/button&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js&quot;&gt;&lt;/script&gt;
+              &lt;script src=&quot;https://unpkg.com/ml5@1/dist/ml5.js&quot;&gt;&lt;/script&gt;
+              &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+              </pre
+          >
+        </div>
+      </section>
+
+      <section id="css-section">
+        <h2>CSS Code</h2>
+        <div class="code-editor">
+          <pre id="css-code">
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+              }
+              
+              body {
+                background: #eaeaea;
+                font-family: Arial, sans-serif;
+              }
+              
+              .container {
+                display: flex;
+                min-height: 100vh;
+                max-height: fit-content;
+              }
+              
+              .left-section {
+                background-color: #000051;
+                color: white;
+                width: 35%;
+                height: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+              }
+              
+              .top-div,
+              .center-div,
+              .bottom-div {
+                padding: 20px;
+              }
+              
+              .top-div {
+                align-self: flex-start;
+              }
+              
+              .center-div h2 {
+                text-align: center;
+                margin: 20px;
+              }
+              
+              .bottom-div {
+                align-self: flex-end;
+                width: 100%;
+              }
+              
+              .bottom-div a {
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                font-weight: 700;
+                text-transform: capitalize;
+                width: 100%;
+                padding: 15px;
+                background-color: #d32f2f;
+                border: none;
+                color: white;
+                font-size: 18px;
+                cursor: pointer;
+              }
+              
+              .bottom-div a:hover {
+                background-color: #a00000;
+              }
+              
+              .right-section {
+                width: 65%;
+                height: 100%;
+                position: relative;
+                overflow: hidden;
+              }
+              
+              #gesture-text {
+                position: fixed;
+                top: 0;
+                z-index: 1000;
+                margin: 30px;
+                width: fit-content;
+                padding: 10px 25px;
+                padding-right: 0;
+                color: white;
+                background-color: #313131;
+                font-size: 1.1em;
+              }
+              
+              #gesture-text span {
+                height: 98%;
+                padding: 10px 20px;
+                background-color: white;
+                color: #313131;
+                font-weight: 900;
+              }
+              
+              .instructions-text {
+                text-align: left;
+                line-height: 25px;
+                font-size: 12px;
+              }
+              
+              .instructions-text span {
+                background-color: #fff;
+                color: #000;
+                padding: 5px 10px;
+              
+              }
+              
+              canvas {
+                position: absolute;
+                top: 4px;
+                right: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0 0 50px 5px #000;
+                border: 3px ridge #8b8b8b;
+                border-radius: 5px;
+              }
+              
+              .image-gallery {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              .container .slide {
+                width: 900px; /* Reduced width */
+                height: 500px; /* Reduced height */
+                position: relative;
+              }
+              
+              .container .slide .item {
+                width: 200px;
+                height: 250px; /* Adjusted height */
+                position: absolute;
+                top: 60%;
+                transform: translate(0, -50%);
+                border-radius: 5px;
+                box-shadow: 0 0 20px 1px #000000;
+                border: 3px ridge silver;
+                background-position: 50% 50%;
+                background-size: cover;
+                display: inline-block;
+                transition: 0.5s;
+              }
+              
+              .slide .item:nth-child(1),
+              .slide .item:nth-child(2) {
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+                border-radius: 0;
+                width: 100%;
+                height: 100%;
+              }
+              
+              .slide .item:nth-child(3) {
+                left: 50%;
+              }
+              
+              .slide .item:nth-child(4) {
+                left: calc(50% + 220px);
+              }
+              
+              .slide .item:nth-child(5) {
+                left: calc(50% + 440px);
+              }
+              
+              .slide .item:nth-child(n + 6) {
+                left: calc(50% + 660px);
+                opacity: 0;
+              }
+              
+              .content {
+                position: absolute;
+                top: 50%;
+                left: 100px;
+                width: 300px;
+                text-align: left;
+                color: #eee;
+                transform: translate(0, -50%);
+                font-family: system-ui;
+                display: none;
+              }
+              
+              .slide .item:nth-child(2) .content {
+                display: block;
+              }
+              
+              .content .name {
+                font-size: 40px;
+                text-transform: uppercase;
+                font-weight: bold;
+                opacity: 0;
+                animation: animate 1s ease-in-out 1 forwards;
+              }
+              
+              .content .des {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                opacity: 0;
+                animation: animate 1s ease-in-out 0.3s 1 forwards;
+              }
+              
+              .content button {
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                opacity: 0;
+                animation: animate 1s ease-in-out 0.6s 1 forwards;
+                background-color: #d32f2f;
+                color: white;
+              }
+              
+              .content button:hover {
+                background-color: #a00000;
+              }
+              
+              @keyframes animate {
+                from {
+                  opacity: 0;
+                  transform: translate(0, 100px);
+                  filter: blur(33px);
+                }
+                to {
+                  opacity: 1;
+                  transform: translate(0);
+                  filter: blur(0);
+                }
+              }
+              
+              .button {
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: 20px;
+              }
+              
+              .button button {
+                width: 80px;
+                height: 35px;
+                border-radius: 5px;
+                border: 1px solid #fff;
+                cursor: pointer;
+                margin: 0;
+                background-color: #000051;
+                color: white;
+                transition: 0.3s;
+              }
+              
+              .button button:hover {
+                background: #ababab;
+                color: #000;
+                font-weight: 700;
+                border: 1px solid #000051;
+                width: 100px;
+              }
+              
+              @media (max-width: 768px) {
+                .container {
+                  flex-direction: column;
+                }
+              
+                .left-section {
+                  width: 100%;
+                  height: 50vh;
+                }
+              
+                .right-section {
+                  width: 100%;
+                  height: 50vh;
+                }
+              
+                .webcam {
+                  width: 100px;
+                  height: 75px;
+                }
+              }
+          </pre>
+          <button class="copy-btn" onclick="copyToClipboard('css-code')">
+            Copy CSS
+          </button>
+        </div>
+      </section>
+
+      <section id="js-section">
+        <h2>JavaScript Code</h2>
+        <div class="code-editor">
+          <pre id="js-code">
+            // Script for AI automation
+            console.log("Dom Content loaded");
+            // Model URL
+            let imageModelURL = "enter your imagemodel url here..";
+            
+            
+            
+            
+            let gesture = document.getElementById("gesture");
+            
+            let images = [
+              "../images/dog-1.jpeg",
+              "../images/dog-2.jpg",
+              "../images/dog-3.jpeg",
+              "../images/dog-4.jpg",
+              "../images/dog-5.jpg",
+            ];
+            
+            let displayedImg = document.getElementById("displayed-img");
+            let gestureText = document.getElementById("gesture-text"); // Element to display the detected gesture
+            let currentIndex = 0;
+            
+            let video;
+            
+            // Classifier Variable
+            let classifier;
+            
+            function initializeAutmation() {}
+            
+            // Load the model first
+            function preload() {
+              console.log("Preload called");
+              classifier = ml5.imageClassifier(imageModelURL + "model.json");
+            }
+            
+            // Creates canvas and initializes the application
+            function setup() {
+              console.log("Setup called");
+            
+              console.log("Creating Video Canvas");
+              let ratio = [16 * 13, 9 * 13];
+              createCanvas(ratio[0], ratio[1]);
+              // Create the video
+              video = createCapture(VIDEO);
+              video.size(ratio[0], ratio[1]);
+              video.hide();
+            
+              // Start classifying
+              classifyVideo();
+            }
+            
+            let label;
+            
+            // Main draw loop. Draws video captured from the webcam to canvas element and classifies video accoringly. Its an endless loop
+            function draw() {
+              // console.log("Draw called");
+            
+              background(0);
+              // Draw the video
+              image(video, 0, 0);
+            
+              // Draw the label
+              fill(255);
+              textSize(16);
+              textAlign(CENTER);
+              text(label, width / 2, height - 4);
+              classifyVideo();
+            }
+            
+            // Get a prediction for the current video frame
+            function classifyVideo() {
+              // console.log("Classify video called");
+              classifier.classify(video, gotResult);
+            }
+            
+            // When we get a result
+            function gotResult(error, results) {
+              // If there is an error
+              if (error) {
+                // console.error(error[0].label);
+                gesture.innerHTML = error[0].label.toUpperCase();
+                updateImage(error[0].label);
+              }
+            }
+            
+            // Gallary controls
+            let nextBtn = document.querySelector(".next");
+            let prevBtn = document.querySelector(".prev");
+            let startBtn = document.getElementById("startBtn");
+            let webcam = document.getElementById("webcam");
+            
+            // Image Slider
+            nextBtn.addEventListener("click", function () {
+              updateImage("right");
+            });
+            
+            prevBtn.addEventListener("click", function () {
+              updateImage("left");
+            });
+            
+            let canChange = false; // Defines whether image can be changed or not
+            let intervalID = setInterval(() => {
+              canChange = true;
+            }, 3000);
+            
+            function updateImage(ctx) {
+              let controller;
+              if (controller != ctx && canChange == true) {
+                console.log("updating image with: ", ctx);
+                switch (ctx) {
+                  case "left": {
+                    previous();
+                    canChange = false;
+                    break;
+                  }
+                  case "right": {
+                    next();
+                    canChange = false;
+                    break;
+                  }
+            
+                  default: {
+                    console.log("Nothing to change");
+                    canChange = false;
+                  }
+                }
+              }
+            }
+            
+            function previous() {
+              let items = document.querySelectorAll(".item");
+              document.querySelector(".slide").prepend(items[items.length - 1]);
+            }
+            
+            function next() {
+              let items = document.querySelectorAll(".item");
+              document.querySelector(".slide").appendChild(items[0]);
+            }
+          </pre>
+          <button class="copy-btn" onclick="copyToClipboard('js-code')">
+            Copy JavaScript
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Web Development Projects. All rights reserved.</p>
+    </footer>
+
+    <script src="resource.js"></script>
+  </body>
+</html>
